@@ -27,11 +27,11 @@ jobs:
     name: CI
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
       - name: Cache Node.js modules
         uses: actions/cache@v2
         with:
@@ -51,11 +51,11 @@ jobs:
     name: Test
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
       - name: Cache Node.js modules
         uses: actions/cache@v2
         with:
@@ -75,11 +75,11 @@ jobs:
     name: End To End Tests
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
       - name: Cache Node.js modules
         uses: actions/cache@v2
         with:
@@ -115,11 +115,11 @@ jobs:
     needs: [gatekeep]
     if: needs.gatekeep.outputs.proceed == 'true'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
       - name: Cache Node.js modules
         uses: actions/cache@v2
         with:
@@ -164,7 +164,7 @@ jobs:
       branch: ${{ steps.extract_branch.outputs.branch }}
       tag: ${{steps.extract_tag.outputs.tag}}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Extract branch name
         shell: bash
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
@@ -205,11 +205,11 @@ jobs:
     needs: [ci, test, gatekeep, build-gogov]
     if: needs.gatekeep.outputs.proceed == 'true'
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
       - run: |
           echo SERVERLESS_SERVICE=gogovsg >> $GITHUB_ENV;
           if [[ $GITHUB_REF == $STAGING_BRANCH ]]; then
@@ -288,7 +288,7 @@ jobs:
       branch: ${{ steps.extract_branch.outputs.branch }}
       tag: ${{steps.extract_tag.outputs.tag}}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Extract branch name
         shell: bash
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
@@ -329,11 +329,11 @@ jobs:
     needs: [ci, test, gatekeep, build-edu]
     if: needs.gatekeep.outputs.proceed == 'true'
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
       - run: |
           echo SERVERLESS_SERVICE=edu >> $GITHUB_ENV; 
           if [[ $GITHUB_REF == $STAGING_BRANCH ]]; then
@@ -414,7 +414,7 @@ jobs:
       branch: ${{ steps.extract_branch.outputs.branch }}
       tag: ${{steps.extract_tag.outputs.tag}}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Extract branch name
         shell: bash
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
@@ -455,11 +455,11 @@ jobs:
     needs: [ci, test, gatekeep, build-health]
     if: needs.gatekeep.outputs.proceed == 'true'
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
       - run: |
           echo SERVERLESS_SERVICE=health >> $GITHUB_ENV;
           if [[ $GITHUB_REF == $STAGING_BRANCH ]]; then
