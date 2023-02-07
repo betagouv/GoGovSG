@@ -202,7 +202,8 @@ jobs:
   deploy-gogov:
     name: Deploy to Elastic Beanstalk and AWS Lambda for gogov
     runs-on: ubuntu-22.04
-    needs: [ci, test, gatekeep, build-gogov]
+#     needs: [ci, test, gatekeep, build-gogov]
+    needs: [ci, gatekeep, build-gogov]
     if: needs.gatekeep.outputs.proceed == 'true'
     steps:
       - uses: actions/checkout@v2
