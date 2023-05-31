@@ -21,6 +21,7 @@ const darkColorMap = {
   gov: '#384A51',
   edu: '#000000',
   health: '#000000', // TODO: update color for health
+  gouvfr: '#000000',
 }
 const dark = darkColorMap[assetVariant]
 
