@@ -39,6 +39,8 @@ const requiredVars: string[] = [
 ]
 
 export const port: string = process.env.PORT as string
+export const activeRedirectPage: boolean =
+  process.env.FEAT_ACTIVE_REDIRECT_PAGE === 'true'
 
 // AWS Simple Email Service
 const sesVars: string[] = ['SES_HOST', 'SES_USER', 'SES_PASS', 'SES_PORT']

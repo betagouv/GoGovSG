@@ -4,7 +4,7 @@ import { DependencyIds } from '../../../constants'
 import { NotFoundError } from '../../../util/error'
 import { RedirectResult, RedirectType } from '..'
 import { LinkStatisticsService } from '../../analytics/interfaces'
-import { ogUrl } from '../../../config'
+import { activeRedirectPage, ogUrl } from '../../../config'
 import { CookieArrayReducerService, CrawlerCheckService } from '.'
 
 @injectable()
@@ -70,7 +70,9 @@ export class RedirectService {
       !this.cookieArrayReducerService.userHasVisitedShortlink(
         pastVisits,
         shortUrl,
-      ) && !isFromTrustedPage
+      ) &&
+      !isFromTrustedPage &&
+      activeRedirectPage
 
     const newVisits = this.cookieArrayReducerService.writeShortlinkToCookie(
       pastVisits,
