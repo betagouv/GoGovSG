@@ -245,6 +245,7 @@ const displayHostnameMap = {
   gov: 'Go.gov.sg',
   edu: 'For.edu.sg',
   health: 'For.sg',
+  gouvfr: 'beta.gouv.fr',
 }
 export const displayHostname = displayHostnameMap[assetVariant]
 export const postmanApiUrl: string | undefined = process.env.POSTMAN_API_URL

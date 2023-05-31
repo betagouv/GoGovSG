@@ -44,10 +44,18 @@ const healthMetaTags = {
     'https://s3-ap-southeast-1.amazonaws.com/gosg-public/forsg-landing-meta.png',
 }
 
+const gouvfrMetaTags = {
+  'og:title': 'beta.gouv.fr',
+  'og:type': 'article',
+  'og:description': 'Lien sur de de beta.gouv.fr',
+  'og:image': '',
+}
+
 const metaVariantMap = {
   gov: govMetaTags,
   edu: eduMetaTags,
   health: healthMetaTags,
+  gouvfr: gouvfrMetaTags,
 }
 const metaVariant = metaVariantMap[assetVariant] || govMetaTags
 
