@@ -240,7 +240,7 @@ initDb()
     }
     app.use(errorHandler)
 
-    const port = 8080
+    const port = process.env.PORT
     app.listen(port, () => logger.info(`Listening on port ${port}!`))
   })
   .catch((error: any) => {
