@@ -21,9 +21,9 @@
     <% } %>
     <div class="top-half">
         <div class="top-half-content">
-            <h3>Check your address bar</h3>
-            <a href="https://go.gov.sg/go-antiphishing" target="_blank" rel="noreferrer noopener">Beware of phishing! <br class="mobile-break">Make sure your link starts with <%- displayHostname.toLowerCase() %></a>
-            <p id="url" data-href="<%- escapedLongUrl %>">You will be redirected in <span id="countdown-seconds">6</span> second<span id="s">s</span></p>
+            <h3>Vérifiez votre bar d'adresse</h3>
+            <a href="https://go.gov.sg/go-antiphishing" target="_blank" rel="noreferrer noopener">Attention au hameçonnage (phishing)! <br class="mobile-break">Soyez-sur que votre lien commence par <%- displayHostname.toLowerCase() %></a>
+            <p id="url" data-href="<%- escapedLongUrl %>">Vous allez être redirigé dans <span id="countdown-seconds">6</span> second<span id="s">s</span></p>
             <img id="spinner" src="/assets/<%- assetVariant %>/transition-page/images/spinner.gif" alt="loading" />
             <div class="browser-image" style="background-image: url('/assets/<%- assetVariant %>/transition-page/images/browser.svg');">
                 <div class="links links-<%- assetVariant %>" ><%- displayHostname.toLowerCase() %>/</div>
@@ -33,18 +33,17 @@
     <div class="bottom-half">
         
         <div id="skip">
-            <span>I've checked the link. Skip ahead</span>
+            <span>J'ai vérifié le lien. Allez directement à la page suivante</span>
             <img src="/assets/<%- assetVariant %>/transition-page/icons/icon-arrow-right.svg" alt="right arrow" />
         </div>
         <div class="footer">
             <div id="logo">
                 <img src="/assets/<%- assetVariant %>/transition-page/icons/ogp-logo.svg" alt="ogp logo" />
             </div>
-            <p>You will only be shown this page the first time you access this short link.</p>
+            <p>Vous verez cette page uniquement la première fois que vous accédez au lien court</p>
         </div>
     </div>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= gaTrackingId %>"></script>
     <script src="/assets/transition-page/js/redirect.js"></script>
 </body>
 
