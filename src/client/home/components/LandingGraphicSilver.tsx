@@ -165,7 +165,7 @@ const LandingGraphicSliver = () => {
               variant="contained"
               href="/#/login"
             >
-              <Trans>general.appShortenYourLinksPrompt</Trans>{' '}
+              <Trans>general.appShortenYourLinksNow</Trans>{' '}
             </Button>
           </ApplyAppMargins>
         </Hidden>

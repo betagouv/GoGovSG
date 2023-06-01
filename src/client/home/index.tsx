@@ -51,6 +51,9 @@ const HomePage: FunctionComponent = () => {
       headerBackgroundType={
         isMobileView ? theme.palette.background.default : 'light'
       }
+      withHeader={false}
+      withFooter={false}
+      withLowFooter={false}
     >
       <LandingGraphicSilver />
       {false && (
