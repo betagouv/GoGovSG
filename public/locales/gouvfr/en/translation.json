@@ -5,7 +5,7 @@
     "appTitle": "go.beta.gouv.fr",
     "officerType": "co-animateurs beta.gouv.fr",
     "appCatchphrase": {
-        "styled": "Raccourcisseur de lien de l'incubateur <strong><i>beta.gouv.fr</i>(version beta)</strong>",
+        "styled": "Raccourcisseur de lien de l'incubateur <strong><i>beta.gouv.fr</i> (version beta)</strong>",
         "noStyle": "Raccourcisseur de lien de l'incubateur beta.gouv.fr (version beta)"
     },
     "appDescription": {
