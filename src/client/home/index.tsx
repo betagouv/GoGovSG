@@ -30,8 +30,8 @@ const HomePage: FunctionComponent = () => {
   // Load once on start
   useEffect(() => {
     // Google Analytics: Home Page
-    // GAPageView('HOME PAGE')
-    // GAEvent('home page', 'Entering home page')
+    GAPageView('HOME PAGE')
+    GAEvent('home page', 'Entering home page')
     getLinksToRotate()
     getIsLoggedIn()
   }, [])
@@ -53,19 +53,25 @@ const HomePage: FunctionComponent = () => {
       }
     >
       <LandingGraphicSilver />
-      {/* <div id="landing-bottom">
+      {false && (
+        <div id="landing-bottom">
+          <Section backgroundType="light">
+            <TrustedBySliver />
+          </Section>
+        </div>
+      )}
+      {false && (
+        <div id="landing-description">
+          <Section backgroundType="dark">
+            <DescriptionSliver />
+          </Section>
+        </div>
+      )}
+      {false && (
         <Section backgroundType="light">
-          <TrustedBySliver />
+          <StatisticsSliver />
         </Section>
-      </div> */}
-      {/* <div id="landing-description">
-        <Section backgroundType="dark">
-          <DescriptionSliver />
-        </Section>
-      </div> */}
-      {/* <Section backgroundType="light">
-        <StatisticsSliver />
-      </Section> */}
+      )}
     </BaseLayout>
   )
 }

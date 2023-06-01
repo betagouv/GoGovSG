@@ -3,16 +3,16 @@
     "emailDomain": "beta.gouv.fr",
     "shortUrlPrefix": "go.beta.gouv.fr/",
     "appTitle": "go.beta.gouv.fr",
-    "officerType": "membre transverse beta",
+    "officerType": "co-animateurs beta.gouv.fr",
     "appCatchphrase": {
-        "styled": "Liens raccourcis de confiance par des <strong><i>membre beta</i></strong>",
-        "noStyle": "Liens raccourcis de confiance par des membre beta"
+        "styled": "Raccourcisseur de lien de l'incubateur <strong><i>beta.gouv.fr</i>(version beta)</strong>",
+        "noStyle": "Raccourcisseur de lien de l'incubateur beta.gouv.fr (version beta)"
     },
     "appDescription": {
-        "subtitle": "Les liens raccourcis de <strong>$t(general.appTitle)</strong> ne peuvent être créés que par des membre beta, vous pouvez donc être sûr qu'ils proviennent d'une source fiable."
+        "subtitle": "Les liens raccourcis de <strong>$t(general.appTitle)</strong> ne peuvent être créés que par les co-animateurs beta.gouv.fr, vous pouvez donc être sûr qu'ils proviennent d'une source fiable."
     },
     "linkAdmins": "beta.gouv.fr",
-    "appSignInPrompt": "Êtes-vous un membre beta ?",
+    "appSignInPrompt": "Êtes-vous un membre de l'équipe d'animation beta.gouv.fr ?",
     "appSignIn": "Se connecter",
     "appShortenYourLinksNow": "Raccourcissez vos liens maintenant",
     "appPromptStatistic": "Raccourcisseur d'url en beta test pour l'equipe communauté",
