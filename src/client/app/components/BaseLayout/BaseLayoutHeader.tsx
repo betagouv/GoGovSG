@@ -158,24 +158,24 @@ const BaseLayoutHeader: FunctionComponent<BaseLayoutHeaderProps> = ({
       mobileOrder: 3,
       internalLink: true,
     },
-    // {
-    //   text: 'Send us feedback',
-    //   link: i18next.t('general.links.feedback'),
-    //   public: true,
-    //   icon: feedbackIcon,
-    // },
-    // {
-    //   text: 'Guide',
-    //   link: i18next.t('general.links.faq'),
-    //   public: true,
-    //   icon: helpIcon,
-    // },
-    // {
-    //   text: 'Contribute',
-    //   link: i18next.t('general.links.contribute'),
-    //   public: true,
-    //   icon: githubIcon,
-    // },
+    {
+      text: 'Send us feedback',
+      link: i18next.t('general.links.feedback'),
+      public: true,
+      icon: feedbackIcon,
+    },
+    {
+      text: 'Guide',
+      link: i18next.t('general.links.faq'),
+      public: true,
+      icon: helpIcon,
+    },
+    {
+      text: 'Contribute',
+      link: i18next.t('general.links.contribute'),
+      public: true,
+      icon: githubIcon,
+    },
     {
       text: 'Guide',
       link: i18next.t('general.links.faq'),
@@ -190,7 +190,7 @@ const BaseLayoutHeader: FunctionComponent<BaseLayoutHeaderProps> = ({
       icon: feedbackIcon,
       mobileOrder: 5,
     },
-  ]
+  ].filter((item) => !item.public)
 
   const appBarBtn = isLoggedIn ? (
     <Button
