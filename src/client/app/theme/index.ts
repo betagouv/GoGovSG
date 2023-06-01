@@ -90,7 +90,7 @@ const paletteVariants = {
     divider: '#d8d8d8',
     primary: {
       main: '#000091',
-      dark: '#472F40',
+      dark: '#00006D',
       contrastText: '#fff',
     },
     secondary: {
