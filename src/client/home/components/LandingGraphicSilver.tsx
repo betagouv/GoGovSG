@@ -165,7 +165,7 @@ const LandingGraphicSliver = () => {
               variant="contained"
               href="/#/login"
             >
-              Shorten your links now
+              <Trans>general.appShortenYourLinksPrompt</Trans>{' '}
             </Button>
           </ApplyAppMargins>
         </Hidden>
@@ -174,7 +174,7 @@ const LandingGraphicSliver = () => {
             <Typography className={classes.signInText} variant="caption">
               <Trans>general.appSignInPrompt</Trans>{' '}
               <Link className={classes.signInLink} href="/#/login">
-                Sign in
+                <Trans>general.appSignIn</Trans>{' '}
               </Link>
             </Typography>
           </ApplyAppMargins>

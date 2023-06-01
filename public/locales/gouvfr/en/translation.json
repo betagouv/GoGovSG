@@ -13,6 +13,9 @@
     },
     "linkAdmins": "beta.gouv.fr",
     "appSignInPrompt": "Êtes-vous un membre beta ?",
+    "appSignIn": "Se connecter",
+    "appShortenYourLinksNow": "Raccourcissez vos liens maintenant",
+    "appPromptStatistic": "Raccourcisseur d'url en beta test pour l'equipe communauté",
     "copyright": "beta.gouv.fr",
     "copyrightTag": "beta.gouv.fr",
     "links": {
@@ -61,14 +64,14 @@
     "whitelistPhrase": "Réservé à l'utilisation par des $t(general.officerType) ayant une adresse email de <strong>$t(general.emailDomain)</strong>.",
     "referrals": {
         "1": {
-            "officerPhrase": "Staff from selected schools",
-            "emailDomain": "edu.sg",
-            "link": "for.edu.sg"
+            "officerPhrase": "Les membres de beta@dinum peuvent utiliser leurs adresses",
+            "emailDomain": "@beta.gouv.fr",
+            "link": "beta.gouv.fr"
         },
         "2": {
-            "officerPhrase": "selected healthcare professionals",
-            "emailDomain": "",
-            "link": "for.sg"
+            "officerPhrase": "les beta testeurs peuvent utiliser leurs adresses",
+            "emailDomain": "@beta.gouv.fr",
+            "link": "beta.gouv.fr"
         }
     },
     "placeholders": {
