@@ -1,8 +1,8 @@
 {
   "general": {
     "emailDomain": "beta.gouv.fr",
-    "shortUrlPrefix": "go.beta.gouv.fr/",
-    "appTitle": "go.beta.gouv.fr",
+    "shortUrlPrefix": "go.incubateur.net/",
+    "appTitle": "go.incubateur.net/",
     "officerType": "co-animateurs beta.gouv.fr",
     "appCatchphrase": {
         "styled": "Raccourcisseur de lien de l'incubateur <strong><i>beta.gouv.fr</i> (version beta)</strong>",
@@ -19,20 +19,20 @@
     "copyright": "beta.gouv.fr",
     "copyrightTag": "beta.gouv.fr",
     "links": {
-        "contribute": "https://go.gov.sg/go-opensource",
+        "contribute": "https://go.incubateur.net/go-opensource",
         "directory": "/directory",
         "apiintegration": "/apiintegration",
         "dashboard": "/user",
-        "feedback": "https://go.beta.gouv.fr/gogovsg-support",
-        "faq": "https://guide.go.gov.sg",
-        "privacy": "https://guide.go.gov.sg/privacy",
-        "terms": "https://guide.go.gov.sg/termsofuse",
+        "feedback": "https://go.incubateur.net/gogovsg-support",
+        "faq": "https://guide.go.incubateur.net",
+        "privacy": "https://guide.go.incubateur.net/privacy",
+        "terms": "https://guide.go.incubateur.net/termsofuse",
         "contact": "",
         "builtBy": "",
         "linkedin": "",
         "facebook": "",
-        "apiDoc": "https://guide.go.gov.sg/developer-guide/api-documentation",
-        "verifyMessages": "https://check.go.gov.sg"
+        "apiDoc": "https://guide.go.incubateur.net/developer-guide/api-documentation",
+        "verifyMessages": "https://check.go.incubateur.net"
     },
     "builtBy": "Conçu par Open Government Products"
   },
