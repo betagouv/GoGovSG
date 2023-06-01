@@ -94,9 +94,9 @@ const paletteVariants = {
       contrastText: '#fff',
     },
     secondary: {
-      light: '#F1D4DF',
-      main: '#AB7F95',
-      dark: '#472F40',
+      light: '#9A9AFF',
+      main: '#7F7FC8',
+      dark: '#000074',
       contrastText: '#000',
     },
     text: {
