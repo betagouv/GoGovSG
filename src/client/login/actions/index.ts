@@ -108,8 +108,8 @@ const getEmailValidationGlobExpression =
         response.text().then((expression) => {
           const globValidator = new Minimatch(expression, {
             noext: false,
-            noglobstar: true,
-            nobrace: true,
+            noglobstar: false,
+            nobrace: false,
             nonegate: true,
           })
           dispatch<SetEmailValidatorAction>(
