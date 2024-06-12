@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) =>
       width: '25%',
       // Creates the half in colour-fill, half outside it effect.
       marginTop: 'calc(-52px / 2)',
-      backgroundColor: '#DC8B47',
+      backgroundColor: '#9A9AFF',
       color: '#FFF',
       '&:hover': {
         backgroundColor: '#ca7126',
@@ -165,7 +165,7 @@ const LandingGraphicSliver = () => {
               variant="contained"
               href="/#/login"
             >
-              Shorten your links now
+              <Trans>general.appShortenYourLinksNow</Trans>{' '}
             </Button>
           </ApplyAppMargins>
         </Hidden>
@@ -174,7 +174,7 @@ const LandingGraphicSliver = () => {
             <Typography className={classes.signInText} variant="caption">
               <Trans>general.appSignInPrompt</Trans>{' '}
               <Link className={classes.signInLink} href="/#/login">
-                Sign in
+                <Trans>general.appSignIn</Trans>{' '}
               </Link>
             </Typography>
           </ApplyAppMargins>

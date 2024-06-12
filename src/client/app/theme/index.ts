@@ -85,6 +85,29 @@ const paletteVariants = {
       paper: '#ffffff',
     },
   },
+  gouvfr: {
+    type: 'light' as PaletteType,
+    divider: '#d8d8d8',
+    primary: {
+      main: '#000091',
+      dark: '#00006D',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#9A9AFF',
+      main: '#7F7FC8',
+      dark: '#000074',
+      contrastText: '#000',
+    },
+    text: {
+      primary: '#000091',
+      secondary: '#767676',
+    },
+    background: {
+      default: '#f9f9f9',
+      paper: '#ffffff',
+    },
+  },
 }
 
 const palette = paletteVariants[assetVariant]

@@ -23,6 +23,7 @@ const domainVariantMap = {
   gov: 'go.gov.sg',
   edu: 'for.edu.sg',
   health: 'for.sg',
+  gouvfr: 'beta.gouv.fr',
 } as const
 const domainVariant = domainVariantMap[assetVariant]
 

@@ -29,7 +29,7 @@ if (!ASSET_VARIANT)
   throw Error('Environment variable for ASSET_VARIANT is missing')
 if (!DOMAIN) throw Error('Environment variable for DOMAIN is missing!')
 
-const ASSET_VARIANTS = ['gov', 'edu', 'health']
+const ASSET_VARIANTS = ['gov', 'edu', 'health', 'gouvfr']
 if (!ASSET_VARIANTS.includes(ASSET_VARIANT))
   throw Error('Invalid variant name!')
 
@@ -38,6 +38,7 @@ const darkColorMap = {
   gov: '#384A51',
   edu: '#2B2E4A',
   health: '#472F40',
+  gouvfr: '#472F40',
 }
 const dark = darkColorMap[ASSET_VARIANT]
 

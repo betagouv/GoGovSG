@@ -51,21 +51,30 @@ const HomePage: FunctionComponent = () => {
       headerBackgroundType={
         isMobileView ? theme.palette.background.default : 'light'
       }
+      withHeader
+      withFooter={false}
+      withLowFooter={false}
     >
       <LandingGraphicSilver />
-      <div id="landing-bottom">
+      {false && (
+        <div id="landing-bottom">
+          <Section backgroundType="light">
+            <TrustedBySliver />
+          </Section>
+        </div>
+      )}
+      {false && (
+        <div id="landing-description">
+          <Section backgroundType="dark">
+            <DescriptionSliver />
+          </Section>
+        </div>
+      )}
+      {false && (
         <Section backgroundType="light">
-          <TrustedBySliver />
+          <StatisticsSliver />
         </Section>
-      </div>
-      <div id="landing-description">
-        <Section backgroundType="dark">
-          <DescriptionSliver />
-        </Section>
-      </div>
-      <Section backgroundType="light">
-        <StatisticsSliver />
-      </Section>
+      )}
     </BaseLayout>
   )
 }

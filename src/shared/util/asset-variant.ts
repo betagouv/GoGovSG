@@ -1,5 +1,5 @@
 // declare this array as an immutable tuple const context, which allows us to get the narrow literal type directly
-const assetVariants = ['gov', 'edu', 'health'] as const
+const assetVariants = ['gov', 'edu', 'health', 'gouvfr'] as const
 
 // converts the assetVariants const context into a type
 // "number" tells TS to interpret the array as a union of its values rather than the literal array type

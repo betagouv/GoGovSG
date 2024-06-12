@@ -190,7 +190,7 @@ const BaseLayoutHeader: FunctionComponent<BaseLayoutHeaderProps> = ({
       icon: feedbackIcon,
       mobileOrder: 5,
     },
-  ]
+  ].filter((item) => !item.public)
 
   const appBarBtn = isLoggedIn ? (
     <Button

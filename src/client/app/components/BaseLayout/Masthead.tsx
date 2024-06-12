@@ -44,9 +44,7 @@ const Masthead = ({ isSticky, toStick }: MastheadProps) => {
         className={classes.mastheadLink}
       >
         <img src={lionHeadSymbol} alt="" />
-        <span className={classes.mastheadText}>
-          A Singapore Government Agency Website
-        </span>
+        <span className={classes.mastheadText}>Un site de beta.gouv.fr</span>
       </a>
     </div>
   )

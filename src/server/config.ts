@@ -38,6 +38,10 @@ const requiredVars: string[] = [
   'API_KEY_SALT', // To generate APIKey
 ]
 
+export const port: string = process.env.PORT as string
+export const activeRedirectPage: boolean =
+  process.env.FEAT_ACTIVE_REDIRECT_PAGE === 'true'
+
 // AWS Simple Email Service
 const sesVars: string[] = ['SES_HOST', 'SES_USER', 'SES_PASS', 'SES_PORT']
 
@@ -241,6 +245,7 @@ const displayHostnameMap = {
   gov: 'Go.gov.sg',
   edu: 'For.edu.sg',
   health: 'For.sg',
+  gouvfr: 'beta.gouv.fr',
 }
 export const displayHostname = displayHostnameMap[assetVariant]
 export const postmanApiUrl: string | undefined = process.env.POSTMAN_API_URL

@@ -1,0 +1,81 @@
+{
+  "general": {
+    "emailDomain": "beta.gouv.fr",
+    "shortUrlPrefix": "go.incubateur.net/",
+    "appTitle": "go.incubateur.net/",
+    "officerType": "co-animateurs beta.gouv.fr",
+    "appCatchphrase": {
+        "styled": "Raccourcisseur de lien de l'incubateur <strong><i>beta.gouv.fr</i> (version beta)</strong>",
+        "noStyle": "Raccourcisseur de lien de l'incubateur beta.gouv.fr (version beta)"
+    },
+    "appDescription": {
+        "subtitle": "Les liens raccourcis de <strong>$t(general.appTitle)</strong> ne peuvent être créés que par les co-animateurs beta.gouv.fr, vous pouvez donc être sûr qu'ils proviennent d'une source fiable."
+    },
+    "linkAdmins": "beta.gouv.fr",
+    "appSignInPrompt": "Êtes-vous un membre de l'équipe d'animation beta.gouv.fr ?",
+    "appSignIn": "Se connecter",
+    "appShortenYourLinksNow": "Raccourcissez vos liens maintenant",
+    "appPromptStatistic": "Raccourcisseur d'url en beta test pour l'equipe communauté",
+    "copyright": "beta.gouv.fr",
+    "copyrightTag": "beta.gouv.fr",
+    "links": {
+        "contribute": "https://go.incubateur.net/go-opensource",
+        "directory": "/directory",
+        "apiintegration": "/apiintegration",
+        "dashboard": "/user",
+        "feedback": "https://go.incubateur.net/gogovsg-support",
+        "faq": "https://guide.go.incubateur.net",
+        "privacy": "https://guide.go.incubateur.net/privacy",
+        "terms": "https://guide.go.incubateur.net/termsofuse",
+        "contact": "",
+        "builtBy": "",
+        "linkedin": "",
+        "facebook": "",
+        "apiDoc": "https://guide.go.incubateur.net/developer-guide/api-documentation",
+        "verifyMessages": "https://check.go.incubateur.net"
+    },
+    "builtBy": "Conçu par Open Government Products"
+  },
+  "homePage": {
+      "targetUsersPhrase": "(avec une adresse email de $t(general.emailDomain))",
+      "features": {
+        "antiPhishing": {
+            "description": "Raccourcissez vos liens avec un domaine de confiance $t(general.appTitle), afin que vos utilisateurs sachent qu'ils proviennent d'un membre beta."
+        },
+        "customised": {
+            "description": "Les URL longues sont difficiles à retenir et prennent de la place. Créez et partagez plutôt des liens courts."
+        },
+        "analytics": {
+            "description": "Vous voulez savoir à quel point vos liens sont populaires ? Suivez le taux de clic de chaque lien via notre interface web."
+        },
+        "fileSharing": {
+            "description": "Téléchargez votre fichier pour le partager avec qui vous voulez, en utilisant un lien raccourci personnalisé et fiable de $t(general.appTitle)."
+        }
+      },
+      "trustedBy": {
+        "1": "MCI",
+        "2": "MINDEF",
+        "3": "SPF",
+        "4": "WSG",
+        "5": "NParks"
+      }
+  },
+  "login": {
+    "whitelistPhrase": "Réservé à l'utilisation par des $t(general.officerType) ayant une adresse email de <strong>$t(general.emailDomain)</strong>.",
+    "referrals": {
+        "1": {
+            "officerPhrase": "Les membres de beta@dinum peuvent utiliser leurs adresses",
+            "emailDomain": "@beta.gouv.fr",
+            "link": "beta.gouv.fr"
+        },
+        "2": {
+            "officerPhrase": "les beta testeurs peuvent utiliser leurs adresses",
+            "emailDomain": "@beta.gouv.fr",
+            "link": "beta.gouv.fr"
+        }
+    },
+    "placeholders": {
+        "email": "dominique@beta.gouv.fr"
+    }
+  }
+}
